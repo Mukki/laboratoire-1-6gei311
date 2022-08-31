@@ -27,7 +27,7 @@ void main(void)
     hr = pGraph->QueryInterface(IID_IMediaEvent, (void **)&pEvent);
 
     // Build the graph. IMPORTANT: Change this string to a file on your system.
-    hr = pGraph->RenderFile(L"C:\\Example.avi", NULL);
+    hr = pGraph->RenderFile(L"Example.avi", NULL);
     
     if (SUCCEEDED(hr))
     {
